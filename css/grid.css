@@ -1,0 +1,86 @@
+/* Grid
+----------------------------------------------------------------------------- */
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+}
+
+.col1 {
+    grid-column: span 1;
+}
+
+.col2 {
+    grid-column: span 2;
+}
+
+.col3 {
+    grid-column: span 3;
+}
+
+.col4 {
+    grid-column: span 4;
+}
+
+.col5 {
+    grid-column: span 5;
+}
+
+.col6 {
+    grid-column: span 6;
+}
+
+.col7 {
+    grid-column: span 7;
+}
+
+.col8 {
+    grid-column: span 8;
+}
+
+.col9 {
+    grid-column: span 9;
+}
+
+.col10 {
+    grid-column: span 10;
+}
+
+.col11 {
+    grid-column: span 11;
+}
+
+.col12 {
+    grid-column: span 12;
+}
+
+.no-gutter {
+    grid-column-gap: 0;
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+}
+
+@media (max-width: 768px) {
+    .col1, .col2, .col3, .col4,
+    .col5, .col6, .col7, .col8,
+    .col9, .col10, .col11, .col12 {
+        grid-column: span 12;
+    }
+}
