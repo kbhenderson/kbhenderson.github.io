@@ -1,6 +1,6 @@
 <?php
 // Config
-$sendto = 'krishenderson50@outlook.com';
+$sendto = 'k_henderson50@outlook.com';
 $subject = "New Quote Request";
 
 if ( ! empty( $_POST ) ) {
